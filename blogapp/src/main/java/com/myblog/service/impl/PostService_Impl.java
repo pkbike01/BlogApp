@@ -32,10 +32,7 @@ public class PostService_Impl implements PostService {
     }//this two line of code will perform Autowired(it means that it will perform bean creation...)
     //insert post
 
-
-
-
-
+    //Create post
     @Override
     public PostDto createPost(PostDto postDto) {
         Post post = mapToEntity(postDto);
@@ -44,8 +41,6 @@ public class PostService_Impl implements PostService {
         return dto;
 
     }
-
-
 
     //get all post
 //    @Override
@@ -57,7 +52,7 @@ public class PostService_Impl implements PostService {
 //    }          //this is previous one. updated one is below:
 
 
-    //
+    //get all post
     @Override
     public PostResponse getAllPosts(int pageNo,int pageSize,String sortBy,String sortDir) {
 

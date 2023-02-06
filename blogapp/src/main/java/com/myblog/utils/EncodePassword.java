@@ -6,7 +6,7 @@ import sun.security.util.Password;
 
 public class EncodePassword {
     public static void main(String[] args) {
-        String pass="pankaj";
+        String pass="rakhi";
         PasswordEncoder pencode = new BCryptPasswordEncoder();
         System.out.println(pencode);
         System.out.println(pencode.encode(pass));
